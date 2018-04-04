@@ -39,12 +39,12 @@ public class PaisTest {
 		System.out.println("carregar");
 		Pais fixture = new Pais();
 		fixture.setId(1);
-		fixture.setNome("Brasil");
-		fixture.setPopulacao(213053455);
-		fixture.setArea(8516000.00);
+		fixture.setNome("Brazil");
+		fixture.setPopulacao(2076609290);
+		fixture.setArea(8515767049.00);
 		PaisService novoService = new PaisService();
 		Pais novo = novoService.carregar(1);
-		assertEquals("testa inclusao", novo, fixture);
+		assertEquals("testa carregar", novo, fixture);
 	}
 
 	@Test
@@ -83,10 +83,10 @@ public class PaisTest {
 		System.out.println("maior");//apenas informa no display
 		Pais fixture = new Pais();
 		
-		fixture.setId(3);
+		fixture.setId(9);
 		fixture.setNome("China");
-		fixture.setPopulacao(1395553739);
-		fixture.setArea(9597000.00);
+		fixture.setPopulacao(1372470000);
+		fixture.setArea(959696100.00);
 		
 		PaisService novoService = new PaisService();
 		int id = novoService.maior(paises);
@@ -99,11 +99,10 @@ public class PaisTest {
 	public void test05menor() { 
 		System.out.println("menor");//apenas informa no display
 		Pais fixture = new Pais();//nova instancia
-		
 		fixture.setId(5);//dados esperados para resposta
-		fixture.setNome("Portugal");
-		fixture.setPopulacao(10227660);
-		fixture.setArea(92212.00);
+		fixture.setNome("Austrália");
+		fixture.setPopulacao(23919400);
+		fixture.setArea(769202400.00);
 		
 		PaisService novoService = new PaisService();//nova instancia de paisService
 		int id = novoService.menor(paises);//obtem id no metodo menor

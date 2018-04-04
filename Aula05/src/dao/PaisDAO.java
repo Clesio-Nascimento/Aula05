@@ -91,36 +91,44 @@ public class PaisDAO {
 	
 	public int maior(Pais[] pais) {
 		
-		Pais p1 = new Pais(1,"Brasil",213053455,8516000.00);
-		Pais p2 = new Pais(2, "EUA",328406639,9834000.00);
-		Pais p3 = new Pais(3, "China", 1395553739, 9597000.00);
-		Pais p4 = new Pais(4, "Russia",146462094,17100000.00);
-		Pais p5 = new Pais(5, "Portugal",10227660,92212.00);
+		Pais p1 = new Pais(1, "Brazil", 2076609290, 8515767049.00);
+		Pais p2 = new Pais(2, "Rússia", 146606730, 2240220000.00);
+		Pais p3 = new Pais(3, "Austrália", 23919400, 769202400.00);
+		Pais p4 = new Pais(4, "Índia", 1278160000, 328567400.00);
+		Pais p5 = new Pais(5, "Argentina", 43131966, 278040000.00);
+		Pais p6 = new Pais(6, "México", 121005815, 196437500.00);
+		Pais p7 = new Pais(7, "Canadá", 3585774, 998467000.00);
+		Pais p8 = new Pais(8, "Estados Unidos", 321968000, 937117400.00);
+		Pais p9 = new Pais(9, "China", 1372470000, 959696100.00);
 		
-		Pais[] paises = {p1, p2, p3, p4, p5};
+		Pais[] paises = {p1, p2, p3, p4, p5, p6, p7, p8, p9};
 		
-		int iMa = 0;
+		int a = 0;
 		for (int i = 1; i < paises.length; i++) {
-			if (paises[i].getPopulacao() > paises[iMa].getPopulacao()) {
-				iMa = i;
+			if (paises[i].getPopulacao() > paises[a].getPopulacao()) {
+				a = i;
 			}
 		}
-		return paises[iMa].getId();
+		return paises[a].getId();
 	}
 	
 	public int menor(Pais[] pais) {
 		
-		Pais p1 = new Pais(1, "Brasil", 213053455, 8516000.00);
-		Pais p2 = new Pais(2, "EUA", 328406639, 9834000.00);
-		Pais p3 = new Pais(3, "China", 1395553739, 9597000.00);
-		Pais p4 = new Pais(4, "Russia", 146462094, 17100000.00);
-		Pais p5 = new Pais(5, "Portugal", 10227660, 92212.00);
+		Pais p1 = new Pais(1, "Brazil", 2076609290, 8515767049.00);
+		Pais p2 = new Pais(2, "Rússia", 146606730, 2240220000.00);
+		Pais p3 = new Pais(3, "Austrália", 23919400, 769202400.00);
+		Pais p4 = new Pais(4, "Índia", 1278160000, 328567400.00);
+		Pais p5 = new Pais(5, "Argentina", 43131966, 278040000.00);
+		Pais p6 = new Pais(6, "México", 121005815, 196437500.00);
+		Pais p7 = new Pais(7, "Canadá", 3585774, 998467000.00);
+		Pais p8 = new Pais(8, "Estados Unidos", 321968000, 937117400.00);
+		Pais p9 = new Pais(9, "China", 1372470000, 959696100.00);
 		
-		Pais[] paises = {p1, p2, p3, p4, p5};
+		Pais[] paises = {p1, p2, p3, p4, p5, p6, p7, p8, p9};
 		
 		int me = 0;
 		for (int i = 1; i < paises.length; i++) {
-			if (paises[i].getArea() < paises[me].getArea()) {
+			if (paises[i].getArea() <  paises[me].getArea()) {
 				me = i;
 			}
 		}
